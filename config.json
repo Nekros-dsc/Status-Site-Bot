@@ -1,0 +1,8 @@
+{
+    "bottoken": "Token", 
+    "setchannel": "Id-Channel", 
+
+    "nameweb0": "Name-Web",  
+    "ipweb0": "ip ex : google.com", 
+    "portweb0": "80"
+}
