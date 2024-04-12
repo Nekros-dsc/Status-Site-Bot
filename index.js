@@ -33,7 +33,7 @@ client.on('ready', () => {
     })
     wait(2000, function() {
                     const embed = new EmbedBuilder()
-                        .setTitle('`🪄` ▸ Verification')
+                        .setTitle('`🪄` ▸ Status Site')
                         .setDescription(description)
                         .setFooter({ text: `Last updated on ${new Date().toLocaleString('fr-FR',{timeZone: "Europe/Paris"})}`, iconURL: client.user.avatarURL() })
                         .setColor('#2b2d31');
