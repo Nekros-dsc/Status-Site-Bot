@@ -1,0 +1,19 @@
+{
+  "name": "status-site-bot",
+  "version": "1.0.0",
+  "description": "Status Site Bot.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Status",
+    "Website",
+    "Bot"
+  ],
+  "author": "nekrxs.",
+  "dependencies": {
+    "discord.js": "^14.13.0",
+    "tcp-ping": "^0.1.1"
+  }
+}
