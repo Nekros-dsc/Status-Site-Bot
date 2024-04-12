@@ -2,7 +2,7 @@
     "token": "Put-Token-Here", 
     "channel": "Channel-Id", 
     "site": [ 
-        { "nomweb": "Google", "ipweb": "google.com", "portweb": "80" }, 
-        { "nomweb": "Discord", "ipweb": "discord.com", "portweb": "80" }
+        { "nameweb": "Google", "ipweb": "google.com", "portweb": "80" }, 
+        { "nameweb": "Discord", "ipweb": "discord.com", "portweb": "80" }
     ]
 }
