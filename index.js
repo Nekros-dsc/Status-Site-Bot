@@ -18,7 +18,7 @@ client.on('ready', () => {
     const embed = new EmbedBuilder()
     .setTitle('`🪄` ▸ Verification')
     .setDescription('*Loading...*')
-    .setFooter({ text: `Last updated on ${new Date().toLocaleString('fr-FR',{timeZone: "Europe/Paris"})}`, iconURL: client.user.avatarURL() })
+    .setFooter({ text: `Last updated on ${new Date().toLocaleString('fr-FR',{timeZone: 'Europe/Paris'})}`, iconURL: client.user.avatarURL() })
     .setColor('#2b2d31');
     client.channels.resolve(client.config.channel).send({ embeds: [embed] })
     .then(msg => {
@@ -26,7 +26,7 @@ client.on('ready', () => {
     client.config.site.forEach((s) => {
         tcpp.probe(s.ipweb, s.portweb, function(err, available0) {
                     tcpp.ping({ address: s.ipweb, port: s.portweb }, function(err, data) {
-                        if (available0 == true) {var web = `*\`${online}\` — [\`${s.nomweb}\`](https://${s.ipweb}) (\`${Math.floor(data.avg)}ms\`)*`} else {var web = `*\`${offline}\` — [\`${s.nomweb}\`](https://${s.ipweb})*`} 
+                        if (available0 == true) {var web = `*\`${online}\` — [\`${s.nameweb}\`](https://${s.ipweb}) (\`${Math.floor(data.avg)}ms\`)*`} else {var web = `*\`${offline}\` — [\`${s.nameweb}\`](https://${s.ipweb})*`} 
                         description+= `${web}\n\n`
                 });
         })
@@ -35,9 +35,9 @@ client.on('ready', () => {
                     const embed = new EmbedBuilder()
                         .setTitle('`🪄` ▸ Status Site')
                         .setDescription(description)
-                        .setFooter({ text: `Last updated on ${new Date().toLocaleString('fr-FR',{timeZone: "Europe/Paris"})}`, iconURL: client.user.avatarURL() })
+                        .setFooter({ text: `Last updated on ${new Date().toLocaleString('fr-FR',{timeZone: 'Europe/Paris'})}`, iconURL: client.user.avatarURL() })
                         .setColor('#2b2d31');
-                    msg.edit({ embeds: [embed] }), description = ""
+                    msg.edit({ embeds: [embed] }), description = ''
   })
 }, 3000)
 })
